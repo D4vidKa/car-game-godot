@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://dfgk8leay1vy3"]
+
+[ext_resource type="Texture2D" uid="uid://cgvtilagem3np" path="res://graphics/objects/red car.png" id="1_qnu6o"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6pmnr"]
+size = Vector2(16, 16)
+
+[node name="RedCar" type="StaticBody2D" unique_id=1221646042]
+collision_mask = 0
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=273915353]
+texture = ExtResource("1_qnu6o")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1141968007]
+shape = SubResource("RectangleShape2D_6pmnr")

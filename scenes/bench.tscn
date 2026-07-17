@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://bykvavuyy06ke"]
+
+[ext_resource type="Texture2D" uid="uid://cxutqp0hti8vw" path="res://graphics/objects/bench.png" id="1_3vt41"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6pmnr"]
+size = Vector2(8, 12)
+
+[node name="Bench" type="StaticBody2D" unique_id=1522554349]
+collision_mask = 0
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1622938398]
+texture = ExtResource("1_3vt41")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1209128600]
+shape = SubResource("RectangleShape2D_6pmnr")

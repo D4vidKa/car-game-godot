@@ -1,0 +1,79 @@
+[gd_scene format=3 uid="uid://bg46h5x2n6eev"]
+
+[ext_resource type="Script" uid="uid://b7ytu68u08vc1" path="res://scripts/vitoria.gd" id="1_desg2"]
+[ext_resource type="FontFile" uid="uid://dr201ov4c76pb" path="res://fonts/Crackman.otf" id="2_r0lqn"]
+[ext_resource type="Texture2D" uid="uid://bkgrir378horu" path="res://graphics/player/player_simple.png" id="3_7hcg5"]
+[ext_resource type="FontFile" uid="uid://hqpa84d2dqvp" path="res://fonts/Better VCR 9.0.1.ttf" id="4_5hw06"]
+[ext_resource type="AudioStream" uid="uid://cq5fq6i1h8pxr" path="res://audio/Victory.mp3" id="5_desg2"]
+
+[node name="Vitoria" type="Control" unique_id=1477583035]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_desg2")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1457883490]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.3882353, 0.23529412, 0.39607844, 1)
+
+[node name="Label" type="Label" parent="." unique_id=299468430]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -37.0
+offset_top = -11.5
+offset_right = 37.0
+offset_bottom = -261.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("2_r0lqn")
+theme_override_font_sizes/font_size = 100
+text = "Car game"
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1984020155]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -50.0
+offset_top = -50.0
+offset_right = 50.0
+offset_bottom = 50.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("3_7hcg5")
+
+[node name="Label2" type="Label" parent="." unique_id=1212244812]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -124.0
+offset_top = 254.0
+offset_right = 124.0
+offset_bottom = 19.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("4_5hw06")
+theme_override_font_sizes/font_size = 30
+horizontal_alignment = 1
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=352705487]
+stream = ExtResource("5_desg2")
+volume_db = -5.403
+autoplay = true

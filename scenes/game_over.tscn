@@ -1,0 +1,79 @@
+[gd_scene format=3 uid="uid://kx3i81qnmbbh"]
+
+[ext_resource type="Script" uid="uid://brgh78nvug01w" path="res://scripts/game_over.gd" id="1_racf3"]
+[ext_resource type="FontFile" uid="uid://dr201ov4c76pb" path="res://fonts/Crackman.otf" id="1_tbwuq"]
+[ext_resource type="Texture2D" uid="uid://bkgrir378horu" path="res://graphics/player/player_simple.png" id="2_racf3"]
+[ext_resource type="FontFile" uid="uid://hqpa84d2dqvp" path="res://fonts/Better VCR 9.0.1.ttf" id="3_7m3ot"]
+[ext_resource type="AudioStream" uid="uid://dwu0cl5egad2w" path="res://audio/drummusiclooper5000-lose-sfx-365579.mp3" id="5_7m3ot"]
+
+[node name="GameOver" type="Control" unique_id=667481868]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_racf3")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1663773432]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.3882353, 0.23529412, 0.39607844, 1)
+
+[node name="Label" type="Label" parent="." unique_id=1532089384]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -37.0
+offset_top = -11.5
+offset_right = 37.0
+offset_bottom = -261.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("1_tbwuq")
+theme_override_font_sizes/font_size = 100
+text = "Car game"
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=655320900]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -50.0
+offset_top = -50.0
+offset_right = 50.0
+offset_bottom = 50.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_racf3")
+
+[node name="Label2" type="Label" parent="." unique_id=452584234]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -124.0
+offset_top = 254.0
+offset_right = 124.0
+offset_bottom = 19.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("3_7m3ot")
+theme_override_font_sizes/font_size = 30
+text = "Game Over"
+horizontal_alignment = 1
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1019173456]
+stream = ExtResource("5_7m3ot")
+autoplay = true

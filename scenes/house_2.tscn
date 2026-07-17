@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://yfjgbxjqmgaa"]
+
+[ext_resource type="Texture2D" uid="uid://dxciltwc3sgll" path="res://graphics/objects/house2.png" id="1_clwrr"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6pmnr"]
+size = Vector2(80, 98)
+
+[node name="House_2" type="StaticBody2D" unique_id=865513676]
+collision_mask = 0
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1326798938]
+texture = ExtResource("1_clwrr")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1580483300]
+position = Vector2(0, -1)
+shape = SubResource("RectangleShape2D_6pmnr")
