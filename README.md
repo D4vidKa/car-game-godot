@@ -54,3 +54,10 @@ Projeto baseado no tutorial:
 [(link do vídeo)](https://www.youtube.com/watch?v=TLG2yVpLDT8&t=16955s&pp=ygUFZ29kb3Q%3D)
 
 As modificações descritas acima foram desenvolvidas por mim como parte do processo de aprendizado.
+
+# ScreeShots
+## Imagem do Menu
+<img width="1153" height="647" alt="Menu-jogo" src="https://github.com/user-attachments/assets/2bfe1fe6-7e24-4729-ab9e-897cdf273a39" />
+
+## Imagem do Jogo
+<img width="1154" height="646" alt="Cena-jogo" src="https://github.com/user-attachments/assets/fbf711e6-a1d5-4806-af39-69bfc70e13b1" />
